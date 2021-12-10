@@ -16,20 +16,27 @@
 
 // });
 
+// var fs = require('fs');
+// var files = fs.readdirSync('../images');
 
-const http = require('https')
-const port = 3000
+var fs = require('fs');
+var files = fs.readdirSync('../images');
 
-const handler = (request, response) => {
-    console.log("new user!");
-    response.end('Hello node');
-}
+console.log(files)
 
-const server = http.createServer(handler);
+// const http = require('https')
+// const port = 3000
 
-server.listen(port, (err) => {
-    if (err) {
-        return console.log("Coś poszło nie tak")
-    }
-    console.log("Server is running...")
-})
+// const handler = (request, response) => {
+//     console.log("new user!");
+//     response.end('Hello node');
+// }
+
+// const server = http.createServer(handler);
+
+// server.listen(port, (err) => {
+//     if (err) {
+//         return console.log("Coś poszło nie tak")
+//     }
+//     console.log("Server is running...")
+// })
